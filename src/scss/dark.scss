@@ -1,0 +1,88 @@
+$darkMood: #1e1919;
+@import "methods.scss";
+nav.dark {
+    border-bottom: 1px solid rgb(39, 31, 31);
+    background-color: $darkMood;
+    svg,
+    span {
+        color: silver;
+    }
+}
+.appContainer.dark {
+    background-color: $darkMood;
+}
+.rightSection.dark {
+    background-color: $darkMood;
+    .progressContainer {
+        box-shadow: 4px 9px 5px 0px rgba(0, 0, 0, 0.75);
+        color: silver;
+        h3 {
+            color: silver;
+        }
+    }
+}
+.sidebar.dark {
+    border-right: 1px solid rgb(39, 31, 31);;
+    background-color: $darkMood;
+    li {
+        color: silver;
+        a {
+            color: silver;
+        }
+    }
+}
+.widget.dark {
+    p,
+    svg,
+    a,
+    h2 {
+        color: silver !important;
+    }
+}
+.chart.dark {
+    box-shadow: 4px 9px 5px 0px rgba(0, 0, 0, 0.75);
+    text {
+        color: silver;
+    }
+    line {
+        stroke: black;
+    }
+}
+.transactions.dark {
+    div {
+        background-color: $darkMood;
+        th,
+        td {
+            color: silver;
+        }
+    }
+}
+.tabel.dark {
+    background-color: $darkMood;
+    span,
+    div {
+        color: silver;
+    }
+}
+.singleUserPage.dark {
+    .userInfo,
+    .userChart {
+        box-shadow: 4px 9px 5px 0px rgba(0, 0, 0, 0.75) !important;
+    }
+    .userInfo {
+        h2,
+        ul,
+        li,
+        span {
+            color: silver !important;
+        }
+    }
+}
+.search.dark {
+    .MuiFormControl-root.MuiFormControl-fullWidth.MuiTextField-root{
+        background-color: none;
+    }
+    label, input {
+        color: $themeColor;
+    }
+}

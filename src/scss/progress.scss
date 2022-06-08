@@ -1,0 +1,32 @@
+@import 'methods';
+.progressContainer {
+    width: 40%;
+    height: 95%;
+    color: $fontColor;
+    box-shadow: 4px 9px 5px 0px rgba(227,224,227,1);
+    .top {
+        height: 15%;
+        h2 {
+            margin-left: 10%;
+        }
+    }
+    .bottom {
+        height: 85%;
+        @include flex(flex-start, column);
+        svg {
+            width: 70%;
+            height: 50%;
+        }
+        h2 {
+            margin: 5% 0 0 5%;
+        }
+        h3 {
+            margin: 0;
+            margin: 5% 0 0 2%;
+            color: $blackFont;
+        }
+        p {
+            font-size: .8em;
+        }
+    }
+}

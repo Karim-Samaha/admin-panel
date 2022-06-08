@@ -1,0 +1,39 @@
+@import "methods";
+.widgetContainer {
+    width: 100%;
+    height: 30%;
+    @include flex(space-around, row);
+    .widget {
+        width: 20%;
+        height: 130px;
+        box-shadow: 4px 9px 5px 0px rgba(0, 0, 0, 0.75);
+        border-radius: 20px;
+        @include flex(space-around, column);
+        align-items: flex-start;
+        color: $fontColor;
+        div {
+            width: 100%;
+            height: 20%;
+            @include flex(flex-start, row);
+            p {
+                @include flex(center, row);
+                &:first-child {
+                    margin-right: 40%;
+                    margin-left: 8%;
+                }
+            }
+        }
+        h2 {
+            margin: 0 0 0 8%;
+        }
+        a {
+            color: $blackFont;
+            transition: $transition;
+            width: 100%;
+            @include flex(space-around, row);
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}

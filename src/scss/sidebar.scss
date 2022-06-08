@@ -1,0 +1,42 @@
+@import "methods";
+
+.sidebar {
+    width: 20%;
+    height: 100%;
+    background-color: $whiteOne;
+    border-right: 1px solid $lightFontColor;
+    @include flex(space-around, column);
+    align-items: flex-start;
+    overflow-y: auto;
+    h4 {
+        margin: 0 0 2% 3%;
+        padding: 0;
+        color: $fontColor;
+    }
+    div {
+        width: 100%;
+        ul {
+            @include ul();
+            width: 100%;
+            li {
+                @include flex(flex-start, row);
+                color: $fontColor;
+                width: 80%;
+                transition: $transition;
+                cursor: pointer;
+                margin-bottom: 2%;
+                &:hover {
+                    opacity: 0.5;
+                }
+                svg {
+                    margin: 0% 10%;
+                    color: $themeColor;
+                }
+                a {
+                    color: $fontColor;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

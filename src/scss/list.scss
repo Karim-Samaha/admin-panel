@@ -1,0 +1,32 @@
+@import "methods.scss";
+img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.MuiDataGrid-cell {
+    color: $blackFont;
+    position: relative;
+    .active {
+        @include approved();
+        padding: 15px 38%;
+        left: 0
+    }
+    .passive {
+        @include pending();
+        padding: 15px 38%;
+        left: 0
+    }
+    .more {
+        background-color: #c5baba66;
+        padding: 5px 8px;
+        border-radius: 10px;
+        color: $blackFont;
+        text-decoration: none;
+        transition: $transition;
+        &:hover {
+            opacity: .5;
+        }
+    }
+}

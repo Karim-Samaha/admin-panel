@@ -1,0 +1,23 @@
+@import 'methods';
+.transactions {
+    width: 100%;
+    height: 85vh;
+    margin: 20px auto;
+    overflow: auto;
+    img {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .status {
+        position: relative;
+        font-weight: bold;
+    }
+    .approved {
+        @include approved();
+    }
+    .pending {
+        @include pending();
+    }
+}

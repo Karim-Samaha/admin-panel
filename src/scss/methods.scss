@@ -1,0 +1,42 @@
+$themeColor: #5c519f;
+$whiteOne: #ffffff;
+$lightFontColor: #dddcdd;
+$fontColor: #706d70;
+$blackFont: #100e0e;
+$transition: all 0.5s ease-in-out;
+@mixin flex($jc, $dir) {
+    display: flex;
+    align-items: center;
+    flex-direction: $dir;
+    justify-content: $jc;
+}
+@mixin ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@mixin approved {
+    background-color: #4ee64e;
+    border-radius: 20px;
+    font-weight: 500;
+    padding: 20px 40%;
+    left: 10%;
+    top: 23%;
+    opacity: 0.5;
+    position: absolute;
+}
+@mixin pending {
+    background-color: #b2a74a;
+    border-radius: 20px;
+    font-weight: 500;
+    padding: 20px 40%;
+    left: 10%;
+    top: 23%;
+    opacity: 0.5;
+    position: absolute;
+}
