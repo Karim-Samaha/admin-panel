@@ -13,13 +13,14 @@ import VpnKeyIcon from '@mui/icons-material/VpnKey';
 import SettingsIcon from '@mui/icons-material/Settings';
 import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
+import CloseIcon from '@mui/icons-material/Close';
 //context
 import { useContext } from "react";
 import { DarkMoodContext } from "../darkMoodContext";
 
 const Sidebar = () => {
-    const { darkMood } = useContext(DarkMoodContext);
-    return <div className={darkMood ? "sidebar dark" : "sidebar"}>
+    const { darkMood, sidebarOpen, toggleSidebar } = useContext(DarkMoodContext);
+    return <div style={{left: sidebarOpen ? "0%" : "-45vw"}} className={darkMood ? "sidebar dark" : "sidebar"}>
         <div>
             <h4>MAIN</h4>
             <ul>
@@ -93,6 +94,7 @@ const Sidebar = () => {
                 </li>
             </ul>
         </div>
+        <CloseIcon className="closeIcon" onClick={toggleSidebar} />
     </div>
 }
 

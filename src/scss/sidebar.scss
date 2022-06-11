@@ -39,4 +39,24 @@
             }
         }
     }
+    .closeIcon {
+        display: none;
+    }
+    @media (max-width: 500px) {
+        position: absolute;
+        width: 45vw;
+        height: 80%;
+        padding-top: 30px;
+        left: -45vw;
+        transition: $transition;
+        z-index: 99999999999999;
+        .closeIcon {
+            display: block;
+            position: absolute;
+            top: 1%;
+            right: 2%;
+            transform: scale(130%);
+            color: $fontColor;
+        }
+    }
 }

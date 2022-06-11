@@ -12,19 +12,22 @@
         align-items: flex-start;
         color: $fontColor;
         div {
-            width: 100%;
+            width: 80%;
             height: 20%;
-            @include flex(flex-start, row);
+            margin: 0 auto;
+            @include flex(space-between, row);
             p {
-                @include flex(center, row);
-                &:first-child {
-                    margin-right: 40%;
-                    margin-left: 8%;
-                }
+                font-weight: 900;
+                &:last-child {
+                    font-weight: 400;
+                } 
             }
         }
         h2 {
             margin: 0 0 0 8%;
+            @media (max-width: 500px) {
+                font-size: 1.2em;
+            }
         }
         a {
             color: $blackFont;
@@ -34,6 +37,16 @@
             &:hover {
                 opacity: 0.5;
             }
+            @media (max-width: 500px) {
+                font-size: .8em;
+            }
         }
+        @media (max-width: 500px) {
+            width: 45%;
+        }
+    }
+    @media (max-width: 500px) {
+        flex-wrap: wrap;
+        height: 25%;
     }
 }

@@ -30,3 +30,14 @@ img {
         }
     }
 }
+.MuiDataGrid-main {
+    @media (max-width: 500px) {
+        height: 80vh;
+        width: 100vw;
+    }
+}
+.MuiDataGrid-footerContainer {
+    @media (max-width: 500px) {
+        width: 100vw;
+    }
+}

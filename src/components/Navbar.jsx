@@ -13,7 +13,7 @@ import Search from './Search';
 /*<input type="text" placeholder='Search Here' />
                 <SearchOutlinedIcon /> */
 const Navbar = () => {
-    const { darkMood, toggleDarkMood } = useContext(DarkMoodContext);
+    const { darkMood, toggleDarkMood, sidebarOpen, toggleSidebar } = useContext(DarkMoodContext);
     return <nav className={darkMood ? "dark" : ""}>
         <div className='logo'>
             <h2><Link to="/">Admin Panel</Link></h2>
@@ -39,7 +39,7 @@ const Navbar = () => {
                     <ChatBubbleOutlineOutlinedIcon />
                 </li>
                 <li>
-                    <ReorderIcon />
+                    <ReorderIcon style={{display : sidebarOpen ? "none" : "block"}} onClick={toggleSidebar} />
                 </li>
                 <li>
                     <img src="../assets/person/1.jpeg" alt="PIC" />

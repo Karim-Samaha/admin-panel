@@ -3,4 +3,15 @@
     width: 55%;
     height: 95%;
     box-shadow: 4px 9px 5px 0px rgba(227,224,227,1);
+    .recharts-responsive-container {
+        @media (max-width: 500px) {
+            width: 100vw !important;
+            height: 50vh!important;
+        }
+    }
+    @media (max-width: 500px) {
+        width: 100% !important;
+        height: 50vh;
+        @include flex(center, row)
+    }
 }
